@@ -20,7 +20,10 @@ self.addEventListener("install", (event) => {
 
   // pre cache all static assets
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => cache.addAll(FILES_TO_CACHE))
+    caches.open(CACHE_NAME).then((cache) => {
+      console.log("Data pre-cached successfully!");
+      return cache.addAll(FILES_TO_CACHE);
+    })
   );
 
   // tell the browser to activate this service worker immediately once it
