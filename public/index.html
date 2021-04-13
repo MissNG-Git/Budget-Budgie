@@ -10,49 +10,87 @@
       href="icons/icon-192x192.png"
       type="image/x-icon"
     />
-
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap"
+      rel="stylesheet"
+    />
     <link rel="manifest" href="manifest.webmanifest" />
     <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <script
+      src="https://kit.fontawesome.com/5e88de36ed.js"
+      crossorigin="anonymous"
+    ></script>
 
     <title>Budget Tracker</title>
   </head>
   <body>
+    <header>
+      <img
+        id="header-img"
+        src="./assets/img/bb-banner.png"
+        alt="Budget Budgie Header"
+      />
+      <h5 id="header-txt">
+        A simple budget tracker for adding expenses & deposits both online and
+        on-the-go!
+      </h5>
+    </header>
+    <hr />
     <div class="wrapper">
       <div class="total">
-        <div class="total">Your total is: $<span id="total">0</span></div>
+        <div class="total">
+          <span id="total-heading"
+            ><i class="fab fa-earlybirds"></i> BALANCE:</span
+          ><br />$
+          <span id="total">0</span>
+        </div>
       </div>
 
       <div class="form">
-        <input type="text" id="t-name" placeholder="Name of transaction" />
-        <input
-          type="number"
-          min="0"
-          id="t-amount"
-          placeholder="Transaction amount"
-        />
+        <input type="text" id="t-name" placeholder="Description" />
+        <input type="number" min="0" id="t-amount" placeholder="Amount" /><br />
         <button id="add-btn">
           <i class="fa fa-plus buttons"></i> Add Funds
         </button>
-        <button id="sub-btn"><i class="fa fa-minus"></i> Subtract Funds</button>
+        <button id="sub-btn"><i class="fa fa-minus"></i> Deduct Funds</button>
         <p class="error"></p>
       </div>
 
-      <div class="transactions">
-        <table>
-          <thead>
-            <th>Transaction</th>
-            <th>Amount</th>
-          </thead>
-          <tbody id="tbody"></tbody>
-        </table>
+      <hr />
+
+      <div class="trans-style">
+        <div class="transactions">
+          <table>
+            <thead>
+              <th class="trans-descript">TRANSACTION</th>
+              <th class="trans-amt">AMOUNT</th>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
       </div>
 
-      <canvas id="myChart"></canvas>
+      <div class="chart-style">
+        <canvas id="myChart"></canvas>
+      </div>
     </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="foot-box">
+        <div class="text-muted">
+          <p id="footer-txt">
+            Copyright © 2021 <strong>MissNG</strong><br />
+            All Rights Reserved
+          </p>
+        </div>
+      </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script src="assets/js/index.js"></script>

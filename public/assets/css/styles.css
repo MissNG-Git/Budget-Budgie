@@ -1,26 +1,60 @@
-body {
-  font-size: 120%;
-  font-family: Arial;
+html {
+  height: 100%;
 }
 
-button, input {
+body {
+  font-size: 120%;
+  font-family: "Baloo 2", cursive;
+  min-height: 100%;
+  background-image: url(https://img.freepik.com/free-photo/pink-marble-texture-background-abstract-marble-texture-natural-patterns-design_41389-392.jpg?size=626&ext=jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+button,
+input {
+  border-radius: 5px;
   font-size: 100%;
   font-family: Arial;
 }
 
 table {
+  padding: 10px;
   width: 100%;
 }
 
-td, th {
-  border: 1px solid #dddddd;
+td,
+th {
+  /* border: 1px solid #dddddd; */
   text-align: left;
   padding: 8px;
 }
 
-tr:nth-child(even) {
-  background-color: #dddddd;
+th {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(63, 63, 63);
 }
+
+td {
+  font-size: 18px;
+  border-bottom: solid 1px rgb(230, 230, 230);
+  height: 55px;
+}
+
+.trans-descript {
+  text-align: left;
+}
+
+.trans-amt {
+  text-align: right;
+}
+
+/* tr:nth-child(even) {
+  background-color: #dddddd;
+} */
 
 .error {
   color: red;
@@ -29,17 +63,92 @@ tr:nth-child(even) {
 .wrapper {
   margin: 0 auto;
   max-width: 825px;
+}
+
+.wrapper,
+header,
+.footer,
+button,
+input {
   text-align: center;
+}
+
+header,
+.total {
+  color: grey;
+}
+
+header {
+  position: relative;
+}
+
+#header-img {
+  border-radius: 5px;
+  width: 80%;
+}
+
+#header-txt {
+  font-size: large;
+  margin: auto auto 25px auto;
+}
+
+#footer-txt {
+  font-size: medium;
+  margin: auto;
 }
 
 .total {
   font-size: 150%;
-  text-decoration: underline;
+}
+
+#total {
+  font-size: 50px;
+}
+
+#total-heading {
+  font-size: 55%;
+  font-weight: 300;
+}
+
+.fab {
+  font-size: xx-large;
 }
 
 .form {
-  margin-top: 25px;
+  margin-top: 10px;
   width: 100%;
+}
+
+button,
+input {
+  font-size: 90%;
+  border-radius: 3px;
+}
+
+.form input {
+  border: solid 1px grey;
+  height: 35px;
+  width: 50%;
+  margin: 5px 0;
+}
+
+#add-btn,
+#sub-btn {
+  color: white;
+  background: PaleVioletRed;
+  border: none;
+  height: 30px;
+  width: 25%;
+  cursor: pointer;
+  margin: 5px 3px;
+}
+
+#add-btn:hover {
+  color: chartreuse;
+}
+
+#sub-btn:hover {
+  color: aqua;
 }
 
 .transactions {
@@ -48,4 +157,31 @@ tr:nth-child(even) {
   overflow: auto;
   width: 90%;
   margin: 0 auto;
+}
+
+.trans-style,
+.chart-style {
+  text-align: left;
+  background: white;
+  border-radius: 15px;
+  width: 85%;
+  margin: 50px auto;
+}
+
+.chart-style {
+  padding: 5px;
+}
+
+.chart-style {
+  padding: 15px;
+}
+
+.footer {
+  background-color: lightgray;
+  color: #2e2e2e;
+  flex-shrink: 0;
+  margin-top: 15px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  width: auto;
 }
