@@ -1,63 +1,57 @@
 # Unit 18 PWA Homework: Online/Offline Budget Trackers
 
-Add functionality to our existing Budget Tracker application to allow for offline access and functionality.
+## ⋘ ──── ∗⋅◦∘◈\[[Budget Budgie](https://budget-budgie.herokuapp.com/)\]◈∘◦⋅∗ ──── ⋙
 
-The user will be able to add expenses and deposits to their budget with or without a connection. When entering transactions offline, they should populate the total when brought back online.
+**Budget Budgie** was created to allows users to track both their expenses and deposits, whether they were online or offline. When online, a transaction will be added to the data table and chart in real-time. When entering a transaction offline, the totals will populate the table data andd update the total as soon as a user returns online.
 
-Offline Functionality:
+The app is conveniently deployed to [Heroku Platform](https://www.heroku.com/) with [MongoDB Atlas](https://www.mongodb.com/cloud/atlas), and features dynamic HTML, styling with CSS and data handling via MongoDB & Mongoose.
 
-  * Enter deposits offline
+List of Technologies Utilized include...
 
-  * Enter expenses offline
+- HTML, CSS, Javascript
+- [Bootstrap CSS](https://getbootstrap.com/)
+- [GoogleFonts](https://fonts.google.com/)
+- [FontAwesome](https://fontawesome.com/)
+- [GitBash](https://gitforwindows.org/)
+- [Node Environment](https://nodejs.org/en/about/)
+- [Express.js Framework](https://expressjs.com/)
+- [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
+- [Mongoose Schema](https://mongoosejs.com/)
+- [Morgan package](https://www.npmjs.com/package/morgan)
+- [Heroku Platform](https://www.heroku.com/)
+- [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
 
-When brought back online:
+## ≫ ──── ≪•◦ OBJECTIVES ◦•≫ ──── ≪
 
-  * Offline entries should be added to tracker.
+```
++ AS AN avid traveller
++ I WANT to be able to track my withdrawals and deposits with or without a data/internet connection
++ SO THAT my account balance is accurate when I am traveling
+```
 
-## User Story
-AS AN avid traveller
-I WANT to be able to track my withdrawals and deposits with or without a data/internet connection
-SO THAT my account balance is accurate when I am traveling
+## ≫ ──── ≪•◦ MOCK-UP ◦•≫ ──── ≪
 
-## Business Context
+The following images show the web application's appearance & functionality:
 
-Giving users a fast and easy way to track their money is important, but allowing them to access that information anytime is even more important. Having offline functionality is paramount to our applications success.
+<p float="left">
+    <img src="/public/assets/img/app.png" alt="Budget Budgie" width="250" style="margin-right: 10px;" />
+</p>
 
+### ≫ ──── ≪•◦ CODE FUNCTIONALITY ◦•≫ ──── ≪
 
-## Acceptance Criteria
-GIVEN a user is on Budget App without an internet connection
-WHEN the user inputs a withdrawal or deposit
-THEN that will be shown on the page, and added to their transaction history when their connection is back online.
+- Application allows user to add transactions on/offline.
 
-- - -
+- Application stores data entered when offline then updates tables & budget once back online.
 
-## Commit Early and Often
+- Application is successfully deployed to Heroku via MongoDB Atlas and can be visited [here](https://budget-budgie.herokuapp.com/)!
 
-* One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
+### ≫ ──── ≪•◦ USABILITY ◦•≫ ──── ≪
 
-1. Your commit history is a signal to employers that you are actively working on projects and learning new skills
-
-2. Your commit history allows you to revert your code base in the event that you need to return to a previous state
-
-* Follow these guidelines for committing:
-
-  * Make single purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits
-
-  * Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history
-
-  * Don't commit half done work, for the sake of your collaborators (and your future self!)
-
-  * Test your application before you commit to ensure functionality at every step in the development process
-
-* We would like you to have well over 200 commits by graduation, so commit early and often!
-
-* Deploy your application with [Heroku and MongoDB Atlas.](../Supplemental/MongoAtlas-Deploy.md)
-
-## Submission on BCS
-
-* You are required to submit the following:
-
-  * the URL to the deployed application
-
-  * the URL to the Github repository
-
+1. Navigate to deployed application page on [Heroku](https://budget-budgie.herokuapp.com/)
+2. The current balance will be displayed under "Balance"
+3. Enter the transaction description in the **Description** text box
+4. Enter the transaction amount in the **Amount** number box
+5. If the transaction is a deposit, click **+ Add Funds** to see balance increase
+6. If the transaction is an expense, click **- Deduct Funds** to see balance decrease
+   _Note the transaction details will also update the "Transaction" & "Total Over Time" tables_
+7. Transactions may also be entered into the app when user is offline, and will update the balance & tables as soon as an internet connection is established.
