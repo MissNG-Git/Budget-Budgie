@@ -34,7 +34,8 @@ List of Technologies Utilized include...
 The following images show the web application's appearance & functionality:
 
 <p float="left">
-    <img src="/public/assets/img/app.png" alt="Budget Budgie" width="250" style="margin-right: 10px;" />
+    <img src="./public/assets/img/app.png" alt="Budget Budgie Top Half" width="250" style="margin-right: 10px;" />
+    <img src="./public/assets/img/app-2.png" alt="Budget Budgie Bottom Half" width="250" style="margin-right: 10px;" />
 </p>
 
 ### ≫ ──── ≪•◦ CODE FUNCTIONALITY ◦•≫ ──── ≪
