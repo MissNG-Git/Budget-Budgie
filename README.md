@@ -1,4 +1,4 @@
-# Unit 18 PWA Homework: Online/Offline Budget Trackers
+# Unit 18 PWA: Online/Offline Budget Trackers
 
 ## ⋘ ──── ∗⋅◦∘◈\[[Budget Budgie](https://budget-budgie.herokuapp.com/)\]◈∘◦⋅∗ ──── ⋙
 
